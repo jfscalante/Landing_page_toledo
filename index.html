@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page scalante</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <!-- div con las dimensiones -->
@@ -52,8 +53,18 @@
                         <input  type="email" name="email" placeholder="Email" required>
                       </div>
                       <div class="user-box">
-                        <input  type="select" id="pais" name="pais" placeholder="Pais" required>
+                        <select id="pais" name="pais" required>
+                          <option value="">Selecciona un país</option>
+                          <option value="Argentina">Argentina</option>
+                          <option value="Bolivia">Bolivia</option>
+                          <option value="Chile">Chile</option>
+                          <option value="Colombia">Colombia</option>
+                          <!-- Agrega más opciones aquí -->
+                      </select>
                       </div> <br>
+                      <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="TU_SITE_KEY"></div>
+                      </div>
                         <div class="form-group">
                             <button type="submit">Recibir tour</button>
                         </div>
@@ -276,12 +287,12 @@
 </section>
 
 <!-- ancho todo el contenido -->
-<div class="container">
+<div class="cont6">
 <!-- ancho contenido -->
-  <div class="contenido-ancho">
+  <div class="cont6-ancho">
 
 <!-- section 6 -->
-    <section class="content-sect6">
+    <section class="cont6-sect6">
       <!-- section image and text -->
         <div class="text-princ">
           <div class="text">
@@ -291,23 +302,23 @@
           </div>
         </div>
       <!-- 3 cols con imagenes comentarios-->
-      <div class="col-2">
+      <div class="colu-2">
       <!-- 1 -->
-      <div class="text-list">
-        <div class="img-list">
-          <img class="img-1" src="img/review_home_trustpilot_escalaLanding-1.jpeg" alt="icon">
+      <div class="textea-list">
+        <div class="img-listar">
+          <img class="imgages1" src="img/review_home_trustpilot_escalaLanding-1.jpeg" alt="icon">
         </div>
       </div>
       <!-- 2 -->
-      <div class="text-list">
-        <div class="img-list">
-          <img src="img/review_home_trustpilot_escalaLanding-2.jpeg" alt="icon">
+      <div class="textea-list">
+        <div class="img-listar">
+          <img class="images2" src="img/review_home_trustpilot_escalaLanding-2.jpeg" alt="icon">
         </div>
       </div>
       <!-- 3 -->    
       <div class="text-list">
-        <div class="img-list">
-          <img src="img/review_home_trustpilot_escalaLanding-3.jpeg" alt="icon">
+        <div class="img-listar">
+          <img class="images3" src="img/review_home_trustpilot_escalaLanding-3.jpeg" alt="icon">
         </div>
       </div>
 
@@ -315,6 +326,54 @@
 
       </section>
   </div>
+
+
+
+
+
+
+
+</div>
+
+<div class="conta5" style="background-color: #2A4C62;">
+  <div class="section-form">
+      
+      <form class="form-conta" action="procesar_formulario.php" method="post">
+          <h2>Recibe un Tour Guiado de Scala</h2>
+          <div class="form-group">
+              <input type="text" name="nombre" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+              <input type="text" name="apellido" placeholder="Apellido" required>
+          </div>
+          <div class="form-group">
+              <input type="email" name="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="form-group">
+              <select name="pais" required>
+                  <option value="" disabled selected>Selecciona tu país</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Brasil">Brasil</option>
+                  <option value="Chile">Chile</option>
+                  <!-- Agrega más opciones de países según sea necesario -->
+              </select>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" id="robot" required>
+              <label for="robot" style="color: #fff;">No soy un robot</label>
+          </div>
+          <div class="form-group">
+              <button type="submit" style="background-color: red;">Recibir Demo</button>
+          </div>
+      </form>
+  </div>
+  <div class="section">
+      <div class="title-and-image">
+          <h2 class="parrafo1" style="color: #fff;">Comienza Hoy mismo a generar leads</h2>
+          <h3>De calidd con las landing pages de Escala</h3>
+          <img src="img/tablet_otto_1 2.png" alt="Imagen de ejemplo">
+      </div>
+</div>
 </div>
 
 

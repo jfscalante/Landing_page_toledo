@@ -155,6 +155,15 @@ body {
     .form-group button:hover {
     background-color: #e41e00;
     }
+    .g-recaptcha {
+        margin-bottom: 5px; /* Espacio entre el widget y el siguiente elemento */
+      }
+      
+      /* Estilo para el mensaje de error generado por reCAPTCHA */
+      #g-recaptcha-response.error {
+        color: red; /* Color del texto en caso de error */
+        font-size: 14px; /* Tamaño de fuente del mensaje de error */
+      }
 
 /* section 2 */
 
@@ -547,4 +556,70 @@ body {
 }
 .content-sect5 .image-princ img{
     transform: translateY(-360px);
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+.conta5 {
+    background-color: #2A4C62;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; /* Ajusta el espacio entre los elementos */
+    align-items: center;
+    padding: 20px;
+}
+
+.conta5 .form-conta {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translateX(200px);
+}
+
+.conta5 .form-conta {
+    color: #080606;
+}
+
+.conta5 .tour-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #c7bfbf;
+    border-radius: 5px;
+    width: 300px; /* Ancho del formulario */
+}
+
+.conta5 form .form-group {
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container5 form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.container5 form button {
+    padding: 10px 20px;
+    background-color: #c01d1d;
+    color: #fff;
+   border:none;
 }
